@@ -5,7 +5,7 @@ A simple web app to slice an image into smaller pieces.
 ## Features
 
 - Upload an image from your computer
-- Enter slice `width` and `height`, `col` and `row`
+- Enter slice `width` and `height`
 - Slice the sprite sheet into individual images
 - Preview and download each sliced image
 
