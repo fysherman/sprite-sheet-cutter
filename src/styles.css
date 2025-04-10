@@ -5,4 +5,7 @@
   #preview img {
     @apply bg-gray-100;
   }
+  #preview a {
+    @apply text-xs wrap-break-word inline-block;
+  }
 }
