@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sprite Sheet Cutter</title>
+    <link href="/src/styles.css" rel="stylesheet" />
+  </head>
+  <body class="p-10">
+    <h1 class="font-semibold text-4xl mb-10">Sprite Sheet Cutter</h1>
+    <div class="mb-4">
+      <input
+        type="file"
+        id="imageInput"
+        accept="image/*"
+        class="file-input file-input-ghost"
+      />
+    </div>
+    <div class="flex gap-2 mb-4">
+      <fieldset class="fieldset">
+        <legend class="fieldset-legend">Width</legend>
+        <input
+          id="sliceWidth"
+          type="number"
+          class="input"
+          placeholder="Type here"
+          value="100"
+        />
+      </fieldset>
+      <fieldset class="fieldset">
+        <legend class="fieldset-legend">Height</legend>
+        <input
+          id="sliceHeight"
+          type="number"
+          class="input"
+          placeholder="Type here"
+          value="100"
+        />
+      </fieldset>
+    </div>
+    <div>
+      <button onclick="window.drawGrid()" class="btn btn-outline">
+        Preview
+      </button>
+      <button onclick="window.sliceImage()" class="btn btn-neutral">
+        Slice
+      </button>
+      <button onclick="window.download()" class="btn btn-neutral">
+        Download
+      </button>
+    </div>
+    <div class="grid grid-cols-2 gap-5 mt-10">
+      <div>
+        <p class="text-base font-medium">Original Image</p>
+        <canvas id="gridCanvas" class="max-w-full" />
+      </div>
+      <div>
+        <p class="text-base font-medium">Preview</p>
+        <div id="preview" class="flex gap-2 flex-wrap"></div>
+      </div>
+    </div>
+    <canvas id="hiddenCanvas" class=" hidden" />
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
+
