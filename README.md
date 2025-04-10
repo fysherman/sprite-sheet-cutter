@@ -1,4 +1,4 @@
-# 🧩 Image Slicer
+# 🧩 [Sprite Sheet Cutter](https://fysherman.github.io/sprite-sheet-cutter/)
 
 A simple web app to slice an image into smaller pieces.
 
@@ -18,5 +18,3 @@ A simple web app to slice an image into smaller pieces.
 5. Click **"Download"**
 
 All processing is done in the browser — no uploads.
-
-### [Sprite Sheet Cutter](https://fysherman.github.io/sprite-sheet-cutter/)
